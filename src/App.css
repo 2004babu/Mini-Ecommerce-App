@@ -1,0 +1,259 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    background-color: rgba(4, 94, 158, 0.642);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+header h1 {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+header input {
+    flex-grow: 2;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+header nav {
+    flex-grow: 2;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-left: 20px;
+    padding: 3px;
+
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    color: white;
+    transition: all 2s;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(4, 94, 158, 0.642);
+    height: 40px;
+}
+
+.Home_Container {
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.Home_Container .Product_Box {
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.Home_Container .Product_Box .image {
+    height: 200px;
+    width: 150px;
+
+}
+
+.Home_Container .Product_Box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Home_Container .Product_Box button {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(9, 158, 245, 0.745);
+}
+
+.ProductDetail_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.ProductDetail_Container .image {
+    height: 400px;
+    width: 600px;
+    margin-right: 10px;
+
+}
+
+.ProductDetail_Container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ProductDetail_Container .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.ProductDetail_Container .right .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+.ProductDetail_Container .right .buttons div {
+    display: flex;
+    gap: 7px;
+    justify-content: space-around;
+    
+}
+.ProductDetail_Container .right .buttons div  button{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 13, 0, 0.76);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+.ProductDetail_Container .right .buttons  button{
+    background-color: rgb(123, 255, 0);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+.success{
+    color: rgb(0, 238, 0);
+}
+
+.Viewcart_Container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+}
+.Viewcart_Container .Each_Product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+   
+}
+.Viewcart_Container .Each_Product .image{
+    height:300px;
+    width: 400px;
+    flex-grow: 1;
+}
+.Viewcart_Container .Each_Product .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Viewcart_Container .Each_Product h5{
+    flex-grow: 1;
+    width: 50%;
+    text-wrap: wrap;
+}
+.Viewcart_Container .Each_Product .buttons {
+    flex-grow: 1;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Viewcart_Container .Each_Product .buttons button {
+    padding: 10px 14px;
+    border-radius: 4px ;
+    color: black;
+
+}
+
+.Viewcart_Container .Each_Product .delete{
+    width: 100px;
+    padding: 10px;
+    flex-grow: 1;
+
+}
+.Viewcart_Container .order{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
