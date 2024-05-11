@@ -34,7 +34,7 @@ useEffect(()=>{
         <CartProduct key={index} product={item} setsqty={setsqty}/>
         ))}
         <div className="order">
-          <h1>Total  Amount: <span>{totalamount>1?totalamount.toFixed(2):totalamount}</span></h1>
+          <h1>Total  Amount:  $<span>{totalamount>1?totalamount.toFixed(2):totalamount}</span></h1>
          {!post.length && <h1>No Cart Added ..</h1> }
         </div>
 
