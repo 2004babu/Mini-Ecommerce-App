@@ -14,7 +14,7 @@ export const ContextProvider=({children})=>{
             "ratings": 4.5,
             "images": [
               {
-                "image": "/images/products/1.jpg"
+                "image": "https://images.fonearena.com/blog/wp-content/uploads/2022/09/OPPO-F21s-Pro-1024x997.jpg"
               },
               {
                 "image": "/images/products/2.jpg"
@@ -31,7 +31,7 @@ export const ContextProvider=({children})=>{
             "ratings": 3.5,
             "images": [
               {
-                "image": "/images/products/2.jpg"
+                "image": "https://tse3.mm.bing.net/th?id=OIP.636tOMYNoABmNSduSyuvEAHaHa&pid=Api&P=0&h=220"
               }
             ],
             "category": "Accessories",
@@ -45,7 +45,7 @@ export const ContextProvider=({children})=>{
             "ratings": 2,
             "images": [
               {
-                "image": "/images/products/3.jpg"
+                "image": "https://tse1.mm.bing.net/th?id=OIP.FfrWEHlHeTQfoX4oHhcFLwHaEd&pid=Api&P=0&h=220"
               }
             ],
             "category": "Laptops",
@@ -59,7 +59,7 @@ export const ContextProvider=({children})=>{
             "ratings": 4,
             "images": [
               {
-                "image": "/images/products/6.jpg"
+                "image": "https://tse4.mm.bing.net/th?id=OIP.98irOnoQO4c3CrnBEGlSpQHaFQ&pid=Api&P=0&h=220"
               }
             ],
             "category": "Laptops",
@@ -73,7 +73,7 @@ export const ContextProvider=({children})=>{
             "ratings": 5,
             "images": [
               {
-                "image": "/images/products/7.jpg"
+                "image": "https://tse4.mm.bing.net/th?id=OIP.vZcqgacBq7_NWvRiyFC9bAHaE9&pid=Api&P=0&h=220"
               }
             ],
             "category": "Laptops",
@@ -87,7 +87,7 @@ export const ContextProvider=({children})=>{
             "ratings": 5,
             "images": [
               {
-                "image": "/images/products/4.jpg"
+                "image": "https://tse4.mm.bing.net/th?id=OIP.7zpq07tmjuoX1aH5dhz83AHaHa&pid=Api&P=0&h=220"
               }
             ],
             "category": "Headphones",
@@ -101,7 +101,7 @@ export const ContextProvider=({children})=>{
             "ratings": 3,
             "images": [
               {
-                "image": "/images/products/5.jpg"
+                "image": "https://cdn.shopify.com/s/files/1/0607/6678/1671/products/MAXICO-CG-345-BLU-RED_2.jpg?v=1670326320"
               }
             ],
             "category": "Sports",

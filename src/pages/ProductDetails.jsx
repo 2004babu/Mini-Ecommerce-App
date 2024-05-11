@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Productcontext } from "../../context/product";
+import { ToastContainer, toast } from 'react-toastify';
 
 const ProductDetails = () => {
   const [btnremove, setbtnremove] = useState(false);
@@ -20,6 +21,10 @@ const ProductDetails = () => {
   function handlesaveChanges(params) {
     const filtered=cart.filter((item)=>(item===params))
     filtered[0].qty=qty
+    toast('save Changes succesfully.....!', {
+      position: "top-left",
+      autoClose: 1000,
+  });
   setSave(false)
   }
   function handleincress(params) {
@@ -29,6 +34,7 @@ const ProductDetails = () => {
     }
     if (Show[0].stock!==qty) {
       setqty(qty + 1);
+     
     }return
   }
   const handleaddcart = (d) => {
@@ -40,10 +46,18 @@ const ProductDetails = () => {
         d.qty = qty;
 
         setCart([...cart, d]);
+        toast('Added succesfully.....!', {
+          position: "top-left",
+          autoClose: 1000,
+      });
       }
     } else {
       d.qty = qty;
       setCart([...cart, d]);
+      toast('Added succesfully.....!', {
+        position: "top-right",
+        autoClose: 1000,
+    });
     }
   };
 
@@ -77,13 +91,13 @@ const ProductDetails = () => {
           </div>
 
           {save ? (<button onClick={()=>handlesaveChanges(Show[0])}>
-            setSave
+            Save Changes 
           </button>):btnremove ? (
             <button
               style={{ backgroundColor: "red" }}
               onClick={() => handleRemovecart(Show[0])}
             >
-              remove
+              Remove
             </button>
           ) : (
             <button onClick={() => handleaddcart(Show[0])}>Add Cart</button>

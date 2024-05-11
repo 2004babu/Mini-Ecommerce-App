@@ -125,7 +125,7 @@ footer {
 .Home_Container .Product_Box .image img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .Home_Container .Product_Box button {

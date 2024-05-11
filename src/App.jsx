@@ -9,16 +9,21 @@ import Footer from "./components/Footer.jsx";
 import ViewCart from "./pages/ViewCart.jsx";
 import './media.css'
 import ProductDetails  from './pages/ProductDetails'
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <>
       <ContextProvider>
         <Router>
+            <ToastContainer theme="dark"/>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/viewcart" element={<ViewCart />} />
             <Route path="/productdetails/:id" element={<ProductDetails />} />
+            
           </Routes>
           <Footer />
         </Router>
