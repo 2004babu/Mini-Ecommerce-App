@@ -5,7 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
 
+    height: 100vh;
+    width: 100vw;
+}
 body {
     height: 100vh;
     width: 100vw;
@@ -31,7 +35,16 @@ header h1 {
     flex-grow: 1;
     font-size: 20px;
     font-weight: 800;
-
+    background: linear-gradient(to right, #ffcf6e 0%, #cdffbf  51%, #ff6ea8  100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    stroke: #da2626;
+    stroke-width: 1px ;
+    
+}
+header a{
+    text-decoration: none;
 }
 
 header input {
@@ -71,7 +84,7 @@ header nav ul a:hover {
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +99,7 @@ footer {
     margin-top: 40px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
@@ -241,6 +254,15 @@ footer {
 
 }
 
+.Viewcart_Container .Each_Product> button{
+    width: 40px;
+    background-color: rgb(123, 255, 0);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+
+}
 .Viewcart_Container .Each_Product .delete{
     width: 100px;
     padding: 10px;
@@ -257,3 +279,48 @@ footer {
     border-radius: 4px;
     padding: 20px;
 }
+
+         
+         .btn-grad {
+            background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+          /* //////// */
+                   
+         .grad {
+            background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         

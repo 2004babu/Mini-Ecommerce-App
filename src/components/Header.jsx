@@ -5,7 +5,7 @@ const Header = () => {
   const {cart,Search,setsearch}=useContext(Productcontext)
   return (
     <header>
-      <h1>Babu App</h1>
+      <Link to={'/'} ><h1>Babu Shop</h1></Link>
       <input type="text" placeholder='Search' id='SearchBox' value={Search} onChange={(e)=>{setsearch(e.target.value)}} autoFocus />
       <nav>
         <ul>

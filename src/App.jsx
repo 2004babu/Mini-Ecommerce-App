@@ -7,6 +7,7 @@ import { fetchdata } from "../API/axiosFetch.js";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import ViewCart from "./pages/ViewCart.jsx";
+import './media.css'
 import ProductDetails  from './pages/ProductDetails'
 function App() {
   return (

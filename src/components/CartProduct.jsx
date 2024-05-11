@@ -42,13 +42,13 @@ const CartProduct = ({ product ,setsqty }) => {
           : product.description.substring(0, 80) + "..."}
       </h5>
       <div className="buttons">
-        <button onClick={()=>handledegress(product)}>-</button>
+        <button className="grad" onClick={()=>handledegress(product)}>-</button>
         <h3>{qty}</h3>
-        <button onClick={()=>handleincress(product)}>+</button>
+        <button className="grad" onClick={()=>handleincress(product)}>+</button>
       </div>
-      <div className="delete" onClick={handledelete}>
+      <button className="delete btn-grad"onClick={handledelete}>
         <i className="fa-solid fa-trash"></i>
-      </div>
+      </button>
     </div>
   );
 };
