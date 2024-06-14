@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      This page is made by beginner Babu........
+      This page is made by Dev Babu !
     </footer>
    
   )
